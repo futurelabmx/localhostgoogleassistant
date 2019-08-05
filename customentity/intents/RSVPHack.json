@@ -1,0 +1,134 @@
+{
+  "id": "79c3ed2e-82e7-43fd-9ca7-1e49b394d48c",
+  "name": "RSVPHack",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "7e42b522-2ea6-415e-a65c-75126c1b0e5b",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "given-name",
+          "value": "$given-name",
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "Claro, para comenzar tu registro ¿Podrías proporcionarme tu nombre, por favor?"
+            },
+            {
+              "lang": "es",
+              "value": "Muy bien, ¿Cuál es tú nombre?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "c0b64d32-5738-4c63-a4fc-5bf18275fcf9",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "Muy bien entonces, ¿Cuántas personas hay en el equipo?"
+            },
+            {
+              "lang": "es",
+              "value": "Ok, ¿ Cuántos integrantes tiene tu equipo?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "210b8055-b3fc-45b5-bda5-36550141b8c6",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "Excelente, ¿ A que dirección de correo electrónico debería enviar tus boletos?"
+            },
+            {
+              "lang": "es",
+              "value": "Gracias, ¿ Cuál es la dirección de correo a la que enviaré los boletos?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "1cb48e82-8904-4c5a-88b3-91abe304a816",
+          "required": true,
+          "dataType": "@type-of-hacker",
+          "name": "type-of-hacker",
+          "value": "$type-of-hacker",
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Comó describirias a los integrantes de tu equipo?(Makers, Devs, Negocios)."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "1b3d3659-3f29-4405-b782-dfac2b88f488",
+          "required": true,
+          "dataType": "@firts-time",
+          "name": "firts-time",
+          "value": "$firts-time",
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "Genial, ¿Es tu primer Hackaton?"
+            },
+            {
+              "lang": "es",
+              "value": "Por último, ¿Has ido a algún Hackaton antes?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "es",
+          "speech": "Gracias, tu registro se ha realizado con éxito. Nos vemos en el Hack"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
